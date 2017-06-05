@@ -9,7 +9,6 @@
 		}
 			
 		public function invoke() {
-			
 			if (! isset($_GET['page'])) {
 				Header ('Location: index.php?page=home');
 			} else {	
@@ -22,6 +21,7 @@
 					case 'login';
 						$result = $this->model->getLogin();
 						if ($result == 'login') {
+							$user_email = $this->model->getUserEmail();
 							include ('view/Afterlogin.php');
 						} else {
 							include ('view/login.php');
@@ -35,6 +35,20 @@
 						} else {
 							include ('view/signup.php');
 						}
+						break;
+						
+					case 'logout';
+						$result = $this->model->getLogout();
+						if($result == 'logout') {
+							Header('Location: index.php?page=login');
+						} 
+						break;
+		
+					case 'updateprofile';
+						$result = $this->model->getUpdateProfile();
+						if($result == 'updated') {
+							Header('Location: index.php?page=login');
+						} 
 						break;
 				}
 			}

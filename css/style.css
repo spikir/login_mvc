@@ -1,0 +1,34 @@
+body {
+	padding: 40px;
+	margin: 0px;
+	background-color: yellow;
+}
+
+.wrapper {
+	background-color: #444;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.boxheader {
+	padding: 10px;
+	font-size: 150%;
+	text-align: center;
+}
+
+.boxsidebar {
+	padding: 20px;
+	background-color: green;
+	float: left;
+}
+
+.boxcontent {
+	padding: 10px;
+	float: left;
+}
+
+.footer {
+	padding: 10px;
+	clear: both;
+	text-align: center;
+}
