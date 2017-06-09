@@ -1,13 +1,14 @@
 body {
 	padding: 40px;
 	margin: 0px;
-	background-color: yellow;
+	background-color: #fff;
 }
 
 .wrapper {
 	background-color: #444;
 	color: #fff;
-	border-radius: 5px;
+	border-radius: 30px;
+	width: 80%;
 }
 
 .boxheader {
@@ -17,12 +18,17 @@ body {
 }
 
 .boxsidebar {
+	color: #fff;
+	height: auto;
+	width: 10%;
 	padding: 20px;
-	background-color: green;
 	float: left;
 }
 
 .boxcontent {
+	color: #fff;
+	width: 70%;
+	height: auto;
 	padding: 10px;
 	float: left;
 }
@@ -31,4 +37,32 @@ body {
 	padding: 10px;
 	clear: both;
 	text-align: center;
+}
+
+.styleform {
+	width: 90%;
+	height: auto;
+	float: left;
+}
+
+.styleform label {
+	display: block;
+	clear: left;
+	float: left;
+	width: auto;
+	text-align: right;
+}
+
+.styleform input {
+	display: block;
+	margin-left: 20%;
+}
+
+.boxsidebar ul {
+	text-decoration: none;
+	color: #fff;
+}
+
+.boxcontent p {
+	float: left;
 }

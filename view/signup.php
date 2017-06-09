@@ -1,7 +1,7 @@
 <?php include ('header.php')?>
 <div class="boxcontent">
-	<?php echo $result; ?>
-	<form action="" method="POST">
+	<?php echo '<p>'.$result.'</p>'; ?>
+	<form action="" method="POST" class="styleform">
 		<p>
 			<label for="login">Username: </label>
 			<input type="text" name="username" />
@@ -15,7 +15,9 @@
 			<input type="text" name="email" />
 		</p>
 		<p>
-			<input type="submit" name="Register" value="Sign Up"/>
+			<button type="submit" name="submit">
+				<span>Sign up</span>
+			</button>
 		</p>
 	</form>
 </div>

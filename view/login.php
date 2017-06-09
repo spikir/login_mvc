@@ -1,10 +1,10 @@
 <?php include ('header.php')?>
-<div class="boxcontent">
-	<?php echo $result; ?>
-	<form action="" method="POST">
+<div class="boxcontent" >
+	<?php echo '<p>'.$result.'</p>'; ?>
+	<form action="" method="POST" class="styleform">
 		<p>
 			<label>Username</label>
-			<input type="text" id="username" value="" name="username" />
+			<input type="text" id="username" name="username" />
 		</p>
 		<p>
 			<label>Password</label>

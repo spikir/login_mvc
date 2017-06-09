@@ -10,11 +10,17 @@
 			
 		public function invoke() {
 			if (! isset($_GET['page'])) {
-				Header ('Location: index.php?page=home');
+				if(isset($_GET['email']) && isset($_GET['hash'])) {
+					$result = $this->model->getVerifyUser();
+					include ('view/login.php');
+				} else {
+					Header ('Location: index.php?page=home');
+				}
 			} else {	
 				$page = $_GET['page'];
 				switch ($page) {
 					case 'home';
+						$products = $this->model->getArticles();
 						include ('view/home.php');
 						break;
 					
