@@ -56,6 +56,11 @@
 							Header('Location: index.php?page=login');
 						} 
 						break;
+						
+					case 'vieworders';
+						$orders = $this->model->getAllOrders();
+						include('view/vieworders.php');
+						break;
 				}
 			}
 		}

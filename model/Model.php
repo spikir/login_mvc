@@ -187,6 +187,8 @@
 				$products = mysqli_fetch_all($result, MYSQLI_ASSOC);
 				mysqli_stmt_close($stmt);
 				return $products;
+			} else {
+				return array();
 			}
 		}
 	}
